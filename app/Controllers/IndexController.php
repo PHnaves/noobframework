@@ -37,7 +37,7 @@ class IndexController extends Controller {
         if (password_verify($password, $user['senha'])) {
             session_start();
             $_SESSION['user'] = $user['id']; // Armazena o id do usuário na sessão
-            header("Location: /dashboard"); // Redireciona para o painel ou página inicial do usuário
+            header("Location: /home"); // Redireciona para o painel ou página inicial do usuário
             exit();
         } else {
             echo "Senha incorreta!";
