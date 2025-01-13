@@ -171,11 +171,11 @@
     </style>
 <body>
 
-    <form action="indexController.php" method="POST">
+    <form action="/index" method="post">
         <h1>Login</h1>
         <img src="img/logo-taskHive.webp" width="100px"  alt="">
         <div class="input-box">
-            <input type="" name="email" placeholder="email" required>
+            <input type="email" name="email" placeholder="Email" required>
             <i class="bi bi-person-circle"></i>
         </div>
 
@@ -188,10 +188,10 @@
             <a href="#">Esqueceu a Senha?</a>
         </div>
 
-        <a href="pagina_principal.html"><button type="submit" class="btn">Login</button></a>
+        <button type="submit" class="btn">Login</button>
 
         <div class="register-link">
-            <p>Não possui uma conta? <a href="/goToRegister"><h3>Cadastro</h3></a></p>
+            <p>Não possui uma conta? <a href="/register">Cadastro</a></p>
         </div>
     </form>
 </body>

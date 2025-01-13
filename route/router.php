@@ -13,8 +13,10 @@
 function routes(FastRoute\RouteCollector $router): void
 {
     $router->get('/', 'App\Controllers\IndexController::index');
-    // Exemplo de arquivo de rotas (routes.php)
-    $router->get('/goToRegister', 'App\Controllers\IndexController::goToRegister');
-
+    $router->get('/index', 'App\Controllers\IndexController::goToRegister');
     $router->get('/register', 'App\Controllers\RegisterController::index');
+    // Rota para o processamento de cadastro de usuário e login
+    $router->post('/register', 'App\Controllers\RegisterController::registerUser');
+    $router->post('/index', 'App\Controllers\IndexController::loginUser');
+
 }
